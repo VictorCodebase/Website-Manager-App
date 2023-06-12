@@ -20,7 +20,7 @@ To run the application locally and start contributing or testing:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/website-manager-app.git
+   git clone https://github.com/victorcodebase/website-manager-app.git
    ```
 
 2. Make sure you have Flutter and the necessary dependencies installed on your development environment.
