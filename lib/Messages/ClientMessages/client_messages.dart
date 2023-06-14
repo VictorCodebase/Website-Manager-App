@@ -25,12 +25,10 @@ class MobileClientMessages extends StatelessWidget {
           child: ListView.builder(
             itemCount: 6,
             itemBuilder: (context, index) {
-              return ClientMessageBox(
-                clientName: "June Cosmo",
-                clientMessage:
-                    "Look unto the sky, the wild expanse of brilliance through the black canvas. The deep cold expanse, so bright through the dark",
-                timeStamp: '05 - 11 - 2003',
-              );
+              return TextBubble(
+                  message: "this is a sample text message",
+                  sender: "Eunice Karambu",
+                  time: "01-12-2012");
             },
           ),
         )
