@@ -14,36 +14,13 @@ class _MobileScaffoldState extends State<MobileScaffold> {
   int _selectedIndex = 1;
 
   @override
-  // List<Widget> _widgets = [
-  //   Container(
-  //     color: Colors.red,
-  //   ),
-  //   Container(
-  //     color: Colors.green,
-  //   ),
-  //   Container(
-  //     color: Colors.purple,
-  //   ),
-  // ];
+
 
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
     });
   }
-
-  // void itemSelected() {
-  //   tileColor:
-  //   Colors.grey[900];
-  //   textColor:
-  //   Colors.grey[300];
-  //   iconColor:
-  //   Colors.grey[300];
-  //   title:
-  //   Text("hey");
-  //
-  //   print("selected");
-  // }
 
   Widget build(BuildContext context) {
     return Scaffold(

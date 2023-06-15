@@ -3,7 +3,8 @@ import 'package:responsive_flutter_app1/utilities/my_tile.dart';
 
 import '../utilities/large_tile.dart';
 import '../utilities/my_box.dart';
-import 'ClientMessages/client_messages.dart';
+import 'ClientMessages/client_messages_structure.dart';
+import 'MessageUtilities/open_client_message.dart';
 
 var tabletMessagesLayout = Column(
   children: [
@@ -35,7 +36,7 @@ var tabletMessagesLayout = Column(
                   MaterialPageRoute(
                       builder: (context) => MobileClientMessages()));
             },
-            child: MyTile(),
+            child: OpenClientMessage(name: "Glory", newMessage: true, snippet: "this is the most recent message. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hope to see you soon...",),
           );
         },
       ),
