@@ -9,7 +9,7 @@ class EditBlock extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final bool isImage = contentType.toLowerCase() == "image" ? true : false;
+    final bool isImage = contentType.toLowerCase() != "text" ? true : false;
 
     return Padding(
       padding: const EdgeInsets.all(8.0),
@@ -53,7 +53,7 @@ class EditBlock extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  isImage ? "Edit image" : "Edit text",
+                  "Edit $contentType",
                   style: const TextStyle(
                     color: Colors.white,
                     fontSize: 16,
